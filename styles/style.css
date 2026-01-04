@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+     background: linear-gradient(to bottom, #0566bb, #2c2c86);
+     background-attachment: fixed; 
+     background-repeat: no-repeat;
+     min-height: 100vh;
+     justify-content: center;
+     display: flex;
+     padding: 20px ;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    text-align: center;
+    border: 3px solid rgb(204, 203, 207);
+    padding-bottom: 30px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cap {
+    width: 100%;
+    height: 180px; 
+    margin: 0;
+    padding: 0;
+}
+
+.cap img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover; 
+    display: block; 
+}
+
+.home img {
+    margin-top: -60px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #020309;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.home h1 {
+    padding-top: 10px;
+    font-size: 45px;
+    color: #e6e4e4;
+    transition: transform 0.3s color 0.2s;
+}
+
+.home h1:hover {
+    transform: scale(1.02) ;
+}
+
+.username {
+    padding-top: 5px;
+    color: #e6e4e4;
+    margin: 10px 0;
+    font-size: 23px;
+}
+
+.bio {
+    padding: 20px;
+    font-size: 15px;
+    color: #e6e4e4;
+    margin: 10px 0;
+}
+
+.link-list {
+    list-style: none;
+}
+
+.card {
+    margin-bottom: 15px;
+    width: 90%; 
+    max-width: 400px; 
+    margin: 0 auto 20px;
+}
+
+
+.card a {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    background-color: #c3d2df;
+    color: #020309;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2.5px solid #201e2f;
+    transition: transform 0.2ms, background-color 0.2ms;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+
+.card a:hover {
+   background-color: #aebbc7;
+   color: #020309;
+   transform: scale(1.02);
+}
+
+.card a i {
+    position: absolute;
+    left: 20px; 
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.card a span {
+  font-size: 15px;
+  text-align: center;
+}
+
+
+.card a i:hover {
+    transform: scale(1.2);
+}
+
+.fa-instagram    {color: #E1306C;}
+.fa-linkedin     {color: #0077B5;}
+.fa-github       {color: #000000;}
+.fa-laptop-code  {color: #22138d;}
+
+
+
+@media (max-width: 480px) {
+    body {
+        padding: 0px 0 10px 0; 
+    }
+
+    .container {
+        border-radius: 20px; 
+        border: none; 
+    }
+
+    .home h1 {
+        font-size: 32px; 
+    }
+
+    .cap {
+        width: 100%;
+        height: 140px; 
+    }
+}
